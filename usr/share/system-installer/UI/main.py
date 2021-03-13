@@ -228,6 +228,8 @@ class Main(Gtk.Window):
         button3.connect("clicked", self.quick_install_warning)
         self.grid.attach(button3, 2, 2, 1, 1)
 
+        self.set_focus(button1)
+
         self.show_all()
 
     def select_config(self, widget):
